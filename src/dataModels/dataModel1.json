@@ -1,0 +1,23 @@
+{
+    "name": "SHA256",
+    "index": 1,
+    "inputs": {
+        "x": {
+            "label": "X",
+            "type": "string",
+            "readOnly": false,
+            "calculate": null
+        },
+        "y": {
+            "label": "Y",
+            "type": "string",
+            "readOnly": false,
+            "calculate": null
+        }, 
+        "sum": {
+            "label": "SHA256",
+            "readOnly": true,
+            "calculate": "sha256"
+        }
+    }
+}

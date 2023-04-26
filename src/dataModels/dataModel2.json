@@ -1,0 +1,73 @@
+{
+    "name": "Mean, median, st. dev",
+    "index": 2,
+    "inputs": {
+        "x1": {
+            "label": "X1",
+            "type": "number",
+            "readOnly": false
+        },
+        "x2": {
+            "label": "X2",
+            "type": "number",
+            "readOnly": false
+        },
+        "x3": {
+            "label": "X3",
+            "type": "number",
+            "readOnly": false
+        },
+        
+        "x4": {
+            "label": "X4",
+            "type": "number",
+            "readOnly": false
+        },
+        "x5": {
+            "label": "X5",
+            "type": "number",
+            "readOnly": false
+        },
+        "x6": {
+            "label": "X6",
+            "type": "number",
+            "readOnly": false
+        },
+        "x7": {
+            "label": "X7",
+            "type": "number",
+            "readOnly": false
+        },
+        "x8": {
+            "label": "X8",
+            "type": "number",
+            "readOnly": false
+        },
+        "x9": {
+            "label": "X9",
+            "type": "number",
+            "readOnly": false
+        },
+        "x10": {
+            "label": "X10",
+            "type": "number",
+            "readOnly": false
+        },
+         
+        "mean": {
+            "label": "Mean",
+            "readOnly": true,
+            "calculate": "mean"
+        },
+        "median": {
+            "label": "Median",
+            "readOnly": true,
+            "calculate": "median"
+        },
+        "standardDeviation": {
+            "label": "Standard Deviation",
+            "readOnly": true,
+            "calculate": "standardDeviation"
+        }
+    }
+}
