@@ -41,6 +41,11 @@ export default function Inputs({
           keyboardType = 'default';
         }
 
+        let maxLength;
+        if (!readOnly) {
+          maxLength = field.type === 'string' ? 36 : 6;
+        }
+
         return (
           <View key={inputKey} style={styles.container}>
             <Text style={styles.label}>{field.label}</Text>
@@ -54,8 +59,11 @@ export default function Inputs({
               keyboardType={keyboardType}
               autoComplete="off"
               autoCorrect={false}
-              maxLength={field.type === 'string' ? 36 : 6}
+              maxLength={maxLength}
               autoCapitalize="none"
+              textAlign="left"
+              multiline={readOnly}
+              numberOfLines={2}
               style={[{borderBottomWidth: readOnly ? 0 : 1}, styles.input]}
             />
           </View>
